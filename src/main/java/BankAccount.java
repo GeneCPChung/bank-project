@@ -32,17 +32,10 @@ public class BankAccount {
 		balance -= amount;
 	}
 
-	public String closeAccount() {
-		return "Account has been closed";
-	}
-
-	public String exitAccount() {
-		return "Thank you for visiting, please come again!";
-	}
-
+	
 	@Override
 	public String toString() {
-		return "Your accounts are: " + this.accountNum + " " + this.type + " " + this.balance;
+		return "" + this.accountNum + " " + this.type + " " + this.balance;
 
 	}
 

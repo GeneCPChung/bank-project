@@ -26,8 +26,8 @@ Collection<BankAccount> accountList = accounts.values();
 		accounts.put(account.getAccountNum(), account);
 	}
 	
-	public void removeAccount(String accountNum) {
-		accounts.remove(accountNum);
+	public void removeAccount(BankAccount account) {
+		accounts.remove(account.getAccountNum(), account);
 		
 	}
 	public void showOrderList() {
